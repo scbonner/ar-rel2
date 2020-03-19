@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <p>Name: <%= @class.name %></p>
+        <p>Instructor: <%= @class.instructor %></p>
+        <br>
+        <p>Students</p>
+        <% @students.each do |student| %>
+            <a href="/show_student? id=<%= student.id? %>"><%= student.name%></a>
+        <% end %>
+        <br>
+        <a href="/classes">Class List</a>
+        </body>
+</html>
